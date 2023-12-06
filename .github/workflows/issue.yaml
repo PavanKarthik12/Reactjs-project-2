@@ -1,0 +1,9 @@
+name : Issue Workflow
+on : issue
+jobs:
+  issue-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Issue Body
+        run: echo "${{ github.event.issue }}"
+        
